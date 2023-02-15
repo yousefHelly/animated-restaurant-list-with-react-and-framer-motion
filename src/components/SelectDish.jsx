@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {listContainerVarients,chevronVarients,dishesInListVarients,dishesInListOnHover} from '../animations/SelectDish'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 export const SelectDish = ({dishes, selectedDish}) => {
     const selectDish = (dish)=>{
         selectedDish(dish)
@@ -14,7 +15,7 @@ export const SelectDish = ({dishes, selectedDish}) => {
     <div className='col-xl-9 order-1 order-xl-2 overflow-hidden'>
         <motion.div variants={listContainerVarients} initial='hidden' animate='visible' className='select-nav mt-5 pt-5 d-flex gap-3 justify-content-center'>
             <motion.button whileHover={chevronVarients("Left")} className='prev-btn border-0 bg-transparent fs-3 d-none d-md-block'>
-                <i className='fas fa-chevron-left'></i>
+                <FaChevronLeft/>
             </motion.button>
                 <div className='dishes-list row gap-3 gap-md-5'>
                     {
@@ -29,7 +30,7 @@ export const SelectDish = ({dishes, selectedDish}) => {
                     }
                 </div>
             <motion.button whileHover={chevronVarients("Right")} className='next-btn border-0 bg-transparent fs-3 d-none d-md-block'>
-                <i className='fas fa-chevron-right'></i>
+                <FaChevronRight/>
             </motion.button>
         </motion.div>
     </div>
