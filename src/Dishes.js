@@ -1,7 +1,7 @@
-import img1 from "./animation menu imgs/seafood-dish.png"
-import img2 from "./animation menu imgs/mixed-fruits-in-a-plate.png"
-import img3 from "./animation menu imgs/favpng_fattoush-vegetarian-cuisine-spinach-salad-asian-cuisine-indonesian-cuisine.png"
-import img4 from "./animation menu imgs/food-plate-top-view.png"
+import img1 from "./animation menu imgs/seafood-dish.webp"
+import img2 from "./animation menu imgs/mixed-fruits-in-a-plate.webp"
+import img3 from "./animation menu imgs/favpng_fattoush-vegetarian-cuisine-spinach-salad-asian-cuisine-indonesian-cuisine.webp"
+import img4 from "./animation menu imgs/food-plate-top-view.webp"
 const imgs =[img1, img2, img3, img4]
 export const dishes = [
     {
