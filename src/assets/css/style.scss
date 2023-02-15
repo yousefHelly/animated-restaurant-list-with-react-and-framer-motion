@@ -1,0 +1,116 @@
+body {
+	background-image: url('../../animation\ menu\ imgs/modern-white-kitchen.jpg');
+	background-size: cover;
+	background-position: 0 30%;
+	@media (width<768px) {
+		background-size: auto;
+		background-position: 62% 6%;
+	}
+	.container {
+		@media (width<768px) {
+			overflow-x: hidden;
+		}
+	}
+	.dish-img-holder {
+		position: relative;
+		img {
+			height: 275px;
+			@media (width<992px) {
+				translate: -50%;
+				left: 50%;
+			}
+		}
+		span {
+			position: absolute;
+			background-color: transparent;
+			width: 700px;
+			height: 600px;
+			border-radius: 50%;
+			border: 110px solid #80808096;
+			top: -400px;
+			left: -225px;
+			z-index: -1;
+			@media (width<992px) {
+				translate: -50%;
+				left: 50%;
+			}
+		}
+		@media (width<992px) {
+			height: 275px;
+		}
+	}
+	.dish-info {
+		span.ordering-dish {
+			font-size: 1.25rem;
+			position: relative;
+			overflow: hidden;
+			color: #252839;
+			width: fit-content;
+		}
+		h1 {
+			font-size: 5rem;
+			width: fit-content;
+			overflow: hidden;
+			span {
+				font-size: 5rem;
+				@media (width<768px) {
+					font-size: 3rem;
+				}
+			}
+			@media (width<768px) {
+				font-size: 3.5rem;
+			}
+		}
+	}
+	.rating {
+		position: absolute;
+		right: 5rem;
+		top: 0.75rem;
+		background-color: #ffffff75;
+		backdrop-filter: blur(5px);
+		transition: height 0.5 ease-out;
+		span.number {
+			font-size: 3.125rem !important;
+			font-weight: 900;
+		}
+		.user-rate div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			width: 3rem;
+			height: 3rem;
+			overflow: hidden;
+			cursor: pointer;
+			&:hover {
+				p.votes {
+					opacity: 1;
+				}
+			}
+			p.votes {
+				opacity: 0;
+				font-size: initial;
+				position: absolute;
+				left: 50px;
+				top: 10px;
+				color: black;
+			}
+		}
+		@media (width<1200px) {
+			position: initial;
+			width: 100%;
+			margin: 10px auto;
+		}
+	}
+	.dishes-list {
+		& > div {
+			background-color: rgb(255 255 255 / 50%);
+			backdrop-filter: blur(0.25rem);
+			cursor: pointer;
+		}
+		img {
+			max-width: 6rem;
+			padding: 0.75rem;
+		}
+	}
+}
